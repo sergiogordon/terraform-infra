@@ -1,0 +1,40 @@
+# Terraform Infrastructure Repository
+
+This repository contains Terraform configurations for managing infrastructure in AWS and Azure.
+
+## Structure
+
+The repository is organized as follows:
+
+- **aws:** Contains Terraform configurations for AWS resources.
+- **azure:** Contains Terraform configurations for Azure resources.
+- **modules:** Contains reusable Terraform modules for common infrastructure components.
+- **variables.tf:** Defines variables used across the entire infrastructure.
+- **outputs.tf:** Defines outputs that are exported from the infrastructure.
+- **main.tf:** Defines the main infrastructure resources.
+- **providers.tf:** Defines the providers for AWS and Azure.
+
+## Usage
+
+To use the Terraform configurations, follow these steps:
+
+1. **Install Terraform:** Download and install the latest version of Terraform from [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html).
+2. **Configure Providers:** Set up the necessary AWS or Azure credentials in your Terraform configuration.
+3. **Initialize Terraform:** Run `terraform init` to initialize the Terraform workspace and download the necessary plugins.
+4. **Plan Changes:** Run `terraform plan` to preview the changes that will be made to your infrastructure.
+5. **Apply Changes:** Run `terraform apply` to apply the changes to your infrastructure.
+
+## Contributing
+
+Contributions to this repository are welcome! Please follow these guidelines:
+
+- Fork the repository.
+- Create a new branch for your changes.
+- Make your changes.
+- Commit your changes with a clear and concise message.
+- Push your changes to your fork.
+- Submit a pull request.
+
+## License
+
+This repository is licensed under the MIT License. See the LICENSE file for more information.
