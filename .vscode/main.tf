@@ -27,3 +27,8 @@ resource "aws_instance" "web_server" {
 output "public_ip" {
   value = aws_instance.web_server.public_ip
 }
+# Packer config
+data "template_file" "packer_ami" {
+  template = file("packer/packer.json") 
+  # ...
+}
